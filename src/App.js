@@ -1,7 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 
+let umami;
+
 function App() {
+  function handleSalesClick() {
+    umami('Sales button clicked');
+  }
+
+  function handleProductsClick() {
+    umami('Products button clicked');
+  }
+
+  function handleCoursesClick() {
+    umami('Courses button clicked');
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +31,9 @@ function App() {
         >
           Learn React
         </a>
+        <button id="sales">Sales</button>
+        <button id="products">Products</button>
+        <button id="courses">Courses</button>
       </header>
     </div>
   );
