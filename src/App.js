@@ -31,9 +31,9 @@ function App() {
         >
           Learn React
         </a>
-        <button id="sales">Sales</button>
-        <button id="products">Products</button>
-        <button id="courses">Courses</button>
+        <button id="sales" onClick={handleSalesClick}>Sales</button>
+        <button id="products" onClick={handleProductsClick}>Products</button>
+        <button id="courses" onClick={handleCoursesClick}>Courses</button>
       </header>
     </div>
   );
