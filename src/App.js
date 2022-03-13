@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+let umami;
+
 function App() {
   function handleSalesClick() {
     if (window.umami) {
