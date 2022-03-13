@@ -1,19 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 
-let umami;
-
 function App() {
   function handleSalesClick() {
-    umami('Sales button clicked');
+    if (window.umami) {
+      umami('Sales button clicked');
+    }
   }
 
   function handleProductsClick() {
-    umami('Products button clicked');
+    if (window.umami) {
+      umami('Products button clicked');
+    }
   }
 
   function handleCoursesClick() {
-    umami('Courses button clicked');
+    if (window.umami) {
+      umami('Courses button clicked');
+    }
   }
 
   return (
